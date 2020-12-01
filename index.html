@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+            <script src="main.js" defer></script>
+            <style>
+                    body{
+                        background-size: 100vw 100vh;
+                        background-repeat: no-repeat;
+                        background-image: url("background.jpg");
+                        
+                    }
+                    h1{
+                       
+                        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-size: 8vh;
+                        margin-left: 107vh;
+                        
+                        padding:2%;
+                        width: 43vh;
+                        border-radius: 40px;
+                        border:white solid 3px;
+                        color:white;
+                      
+                       
+                    }
+                    #img{
+                       
+                        display:inline-flex;
+                        flex-direction: row;
+                        width: 100%;
+                    }
+                    #left1{
+                            width: 40%;
+                            margin: 1%;
+                            opacity: 0.6;
+                    }
+                    #left2{
+                        width: 50%;
+                        margin: 1%;
+                        opacity: 0.6;
+                    }
+                    #mid{
+                        z-index: 1;
+                        width: 100%;
+                        margin:0% 3%;
+                       
+                    }
+                    #right2{
+                        width: 50%;
+                        margin: 1%;
+                        opacity: 0.6;
+                    }
+                    #right1{
+                        width: 40%;
+                        margin: 1%;
+                        opacity: 0.6;
+                    }
+                    img{
+                        width: 100%;
+                        
+                    }
+                    button{
+                        border: none;
+                        background: none;
+                        font-size: 10vh;
+                        color:white;
+                        font-weight: bolder;
+                        margin:0% 5%;
+                        
+                    }
+                    button:hover{
+                        color:darkgreen;
+                        
+                        transition: all .5s ease-in;
+                        
+                    }
+                    #bts{
+                        position: relative;
+                        margin-left:40%;
+                        z-index: 2;
+                    }
+                    .flex {
+                            margin-left: 44.5%;
+                            display: flex;
+                            
+                    }
+                    .flex > div {
+                            background-color: white;
+                            width: 1vw;
+                            height: 1vw;
+                           opacity: 1;
+                            border-radius: 50%;
+                            margin-left: 2%;
+                    }
+                   .flex > div.active {
+                            background-color:green;
+                    }
+
+            </style>
+    </head>
+    <body>
+           <h1>Hallo Welt</h1>
+                <div class="flex">
+                    <div class="button" onclick="toggle(1)"><!-- Button 1 --></div>
+                    <div class="button" onclick="toggle(2)"><!-- Button 2 --></div>
+                    <div class="button" onclick="toggle(3)"><!-- Button 3 --></div>
+                    <div class="button" onclick="toggle(4)"><!-- Button 4 --></div>
+                    <div class="button" onclick="toggle(5)"><!-- Button 5 --></div>
+                </div>   
+           
+            <div id="bts">
+                <button onclick="swipeLeft()">↼</button> 
+                <button onclick="swipeRight()">⇀</button> 
+            </div>
+                
+                
+           <div id="img">
+                    <div id="left1"><img src="images/1.jpg"></div>
+                    <div id="left2"><img src="images/2.jpg"></div>
+                    <div id="mid"><img src="images/3.jpg"></div>
+                    <div id="right2"><img src="images/4.jpg"></div>
+                    <div id="right1"><img src="images/5.jpg"></div>
+                    
+            </div>
+           
+    </body>
+</html>
