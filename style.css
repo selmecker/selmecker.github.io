@@ -122,7 +122,8 @@ p{
                  0 0 10px white,
                  0 0 20px greenyellow;
                  
-}@media screen and (max-width: 451px) {
+}
+@media all and (max-width: 451px) {
    a{
      font-size: 6.5vw;
     }
@@ -147,5 +148,8 @@ p{
    }
    button{
        font-size: 10vw;
+   }
+   p{
+       font-size: 3vw;
    }
   }
