@@ -123,7 +123,7 @@ p{
                  0 0 20px greenyellow;
                  
 }
-@media all and (max-width: 451px) {
+@media all and (max-width: 721px) {
    a{
      font-size: 6.5vw;
     }
